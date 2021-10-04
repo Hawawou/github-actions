@@ -14,4 +14,4 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: number of yotas of each members
-      
+        run: yotas/extract.py
