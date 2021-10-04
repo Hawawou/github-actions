@@ -1,0 +1,17 @@
+name: telegram members yotas
+on:
+  schedule:
+    - cron: "30 17 * * 6"
+
+jobs:
+  build:
+    defaults:
+      run:
+        working-directory: ./.github/workflows/yotas 
+
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: number of yotas of each members
+      
