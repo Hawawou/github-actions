@@ -1,7 +1,6 @@
 name: telegram members yotas
-on:
-  schedule:
-    - cron: "30 17 * * 6"
+on: push
+  
 
 jobs:
   build:
