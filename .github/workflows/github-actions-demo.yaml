@@ -1,5 +1,5 @@
 name: telegram members yotas
-on: push
+on: [push]
   
 
 jobs:
@@ -13,4 +13,4 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: number of yotas of each members
-        run: yotas/extract.py
+        run: extract.py
