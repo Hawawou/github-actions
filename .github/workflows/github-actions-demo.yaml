@@ -13,4 +13,4 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: number of yotas of each members
-        run: extract.py
+        run: curl -X GET https://miniyotas.osscameroon.com/v1/api/records 
