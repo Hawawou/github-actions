@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-        run: echo "hello world"
       - name: number of yotas of each members
         run: https://miniyotas.osscameroon.com/v1/api/records 
         
