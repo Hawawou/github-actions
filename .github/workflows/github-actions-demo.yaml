@@ -13,6 +13,6 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: number of yotas of each members
-        run: https://miniyotas.osscameroon.com/v1/api/records 
+        run: extract.py 
         
       
