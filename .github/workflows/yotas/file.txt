@@ -1,3 +1,0 @@
-Yotas is a reward system 
-Earn yotas by contributing on our open source projects
-Raise an issue or submit a pull request to any of our projects
