@@ -1,6 +1,5 @@
 import urllib.request
 import json
-import pandas
 
 url = "https://miniyotas.osscameroon.com/v1/api/records"
 response = urllib.request.urlopen( url )
