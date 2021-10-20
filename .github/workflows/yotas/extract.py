@@ -11,8 +11,8 @@ print(message)
 print("```")
 
 for item in data_json:
-    print(item['github_handle':], item['yotas'])
-    print("```")
+    print(item['github_handle'], item['yotas'])
+print("```")
     
     
     
