@@ -1,5 +1,6 @@
 import urllib.request
 import json
+import pandas as pd
 
 url = "https://miniyotas.osscameroon.com/v1/api/records"
 response = urllib.request.urlopen( url )
@@ -10,8 +11,16 @@ message = " Number of yotas each member has"
 print(message)
 print("```")
 
+
+data_json.sort(key = lambda item: int(item['yotas']), reverse = True)
 for item in data_json:
-    print(item['github_handle'], item['yotas'])
+    if int(item['yotas']) > 0:
+        print(item['github_handle'], item['yotas'])
+    
+
+
+     
+    
 print("```")
     
     
