@@ -13,7 +13,7 @@ print("```")
 data_json.sort(key = lambda item: int(item['yotas']), reverse = True)
 for item in data_json:
     if int(item['yotas']) > 0:
-        print(item['github_handle'], "->", item['yotas'], "Yts")
+        print(item['github_handle'], ":", item['yotas'], "Yts")
 
 print("```")
     
