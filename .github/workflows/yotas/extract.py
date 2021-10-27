@@ -17,7 +17,7 @@ for item in data_json:
         if length<20:
             add = 20- length
             
-            print(item["github_handle"], ":".ljust(add), item["yotas"], "Yts")
+            print(item["github_handle"], ":".rjust(add), item["yotas"], "Yts")
 print("```")
     
     
