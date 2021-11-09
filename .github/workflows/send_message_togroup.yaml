@@ -1,0 +1,23 @@
+name: send messages to telegram group
+on: [push]
+
+jobs: 
+  build:
+    defaults:
+      run:
+        working-directory: ./.github/workflows/send_message
+    name: build
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@master
+      - name: send messages to telegram group
+        run: python message_file.py > send_message
+
+      - name: send messages to telegram group
+      - uses: appleboy/telegram-checkout@master
+        with:
+          to: -605306244
+          token: 2010406336:AAF2LZgVui0xTd5TZ0FG7w3wQj4n0YKbdHY
+          format: MarkdownV2
+          message_file:  ./.github/workflows/send_message/send_message
+
