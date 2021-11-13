@@ -1,6 +1,7 @@
 name: telegram send message to group
 on: [push]
- jobs:
+
+jobs:
   build:
     defaults:
       run:
@@ -11,12 +12,13 @@ on: [push]
     steps:
       - uses: actions/checkout@master
       - name: send message to telegram group
-        run: python3 extract.py > messages
+        run: python3 extract.py > messagefile
 
       - name: send message to telegram group
         uses: appleboy/telegram-action@master
-        with:
-        to: -605306244
-        token: 2010406336:AAF2LZgVui0xTd5TZ0FG7w3wQj4n0YKbdHY
-        format: MarkdownV2
-        message_file: ./github/workflows/send_message/messages
+        with: 
+          to: -605306244
+          token: 2010406336:AAF2LZgVui0xTd5TZ0FG7w3wQj4n0YKbdHY
+          format: MarkdownV2
+          message_file: ./.github/workflows/send_message/messagefile
+       
